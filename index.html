@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Post Scheduling — Jadwalkan & Otomatiskan Konten Sosial Media</title>
+  <meta name="description" content="Post Scheduling membantu Anda menjadwalkan dan mengotomatiskan posting video di YouTube, TikTok, Instagram, dan Facebook. Coba gratis.">
+  <meta name="theme-color" content="#1D74E4">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Post Scheduling — Jadwalkan & Otomatiskan Konten Sosial Media">
+  <meta property="og:description" content="Jadwalkan video, kelola kalender konten, dan otomatisasi publish lintas platform.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://raw.githubusercontent.com/your-user/your-repo/main/og-image.png">
+  <meta property="og:url" content="https://your-user.github.io/your-repo/">
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231D74E4'/%3E%3Cpath fill='white' d='M20 14h4v36h-4V14zm20 0h4v36h-4V14zM50 22v4H14v-4h36zM14 42v-4h36v4H14z'/%3E%3C/svg%3E">
+  <style>
+    /* (same CSS as before, unchanged) */
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="brand" aria-label="Post Scheduling">
+        <!-- Inline SVG logo -->
+        <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="12" fill="#1D74E4"/>
+          <path fill="white" d="M20 14h4v36h-4V14zm20 0h4v36h-4V14zM50 22v4H14v-4h36zM14 42v-4h36v4H14z"/>
+        </svg>
+        <strong>Post Scheduling</strong>
+      </a>
+      <nav class="nav-links" aria-label="Utama">
+        <a href="#fitur">Fitur</a>
+        <a href="#cara-kerja">Cara Kerja</a>
+        <a href="#harga">Harga</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn outline" href="#daftar">Masuk / Daftar</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="container hero">
+    <div class="hero-grid">
+      <section>
+        <div class="kicker">🚀 Rilis Awal • Coba Gratis</div>
+        <h1 class="title">Jadwalkan & Otomatiskan <br>Konten Sosial Media Anda</h1>
+        <p class="subtitle">
+          Post Scheduling membantu Anda menjadwalkan video, mengatur kalender konten, serta mem-publish otomatis ke YouTube, TikTok, Instagram, dan Facebook — tanpa ribet.
+        </p>
+        <div class="cta">
+          <a class="btn" href="#daftar">Coba Gratis</a>
+          <a class="btn outline" href="#fitur">Lihat Fitur</a>
+        </div>
+        <div class="badges">
+          <span class="badge">Kalender Konten</span>
+          <span class="badge">Auto Publish</span>
+          <span class="badge">Multi-Platform</span>
+          <span class="badge">TTS & Template</span>
+        </div>
+      </section>
+
+      <aside class="hero-illu card" aria-label="Pratinjau aplikasi">
+        <!-- same illustration as before -->
+        <p class="note">Pratinjau UI — tampilan kalender & jadwal posting lintas platform.</p>
+      </aside>
+    </div>
+  </main>
+
+  <!-- FEATURES, HOW IT WORKS, PRICING, FAQ (same as before) -->
+
+  <!-- CTA -->
+  <section id="daftar" class="section">
+    <div class="container card" style="padding:24px; text-align:center">
+      <h2>Siap Konsisten Upload Konten?</h2>
+      <p class="muted">Buat akun gratis hari ini. Hanya butuh beberapa menit.</p>
+      <p>
+        <a class="btn" href="https://example.com/signup" target="_blank" rel="noopener">Daftar Sekarang</a>
+        <a class="btn outline" href="mailto:hello@solusiteknologi.web.id">Hubungi Kami</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container" style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap">
+      <span>© <span id="y"></span> Post Scheduling. All rights reserved.</span>
+      <span class="muted">
+        <a href="#fitur">Fitur</a> ·
+        <a href="#harga">Harga</a> ·
+        <a href="#faq">FAQ</a> ·
+        <a href="mailto:hello@solusiteknologi.web.id">Kontak</a>
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const id = a.getAttribute('href');
+        if(id.length > 1){
+          const el = document.querySelector(id);
+          if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth'}); }
+        }
+      });
+    });
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
